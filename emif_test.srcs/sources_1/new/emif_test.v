@@ -47,7 +47,6 @@ wire [31:0] data_read;    //从MCU读取出来的数据
 wire [15:0] emif_data_in;
 
 assign emif_data = (~emif_re)?emif_data_in:16'bz;    //inout 端口用作输入时为高阻态，用作输出时从相应的缓冲寄存器里取值
-//assign emif_data = emif_data_in;
 
 //**************************************
 //            时钟分频模块

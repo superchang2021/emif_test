@@ -27,7 +27,7 @@ reg emif_we;
 reg emif_re;
 reg emif_clk_in;
 wire [15:0] emif_data;
-//reg [15:0] data;
+reg [15:0] data;
 
 emif_test uut(
 .sys_clk(sys_clk),
@@ -45,7 +45,7 @@ initial begin
   emif_we = 1;
   emif_re = 1;
   emif_clk_in = 0;
-//  data = 16'd0;
+  data = 16'd6;
   # 100; sys_rst_n = 1;
   # 10000; emif_ce = 0;
 //  # 20000; emif_we = 0;data = 16'd3;
@@ -53,11 +53,11 @@ initial begin
   # 50000; emif_we = 1;
   # 60000; emif_re = 0;
   # 100000; emif_re = 1;
-  # 200000 $stop;
+  # 150000 $stop;
 end
 
 always # 5 sys_clk = ~sys_clk;
 always # 50 emif_clk_in = ~emif_clk_in;
-//assign emif_data = (~emif_re)?16'bz:data;
+assign emif_data = (emif_re)?data:16'bz;
 
 endmodule
