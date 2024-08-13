@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 13 11:02:40 2024
+# Process ID: 15600
+# Current directory: D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/impl_1
+# Command line: vivado.exe -log emif_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source emif_test.tcl -notrace
+# Log file: D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/impl_1/emif_test.vdi
+# Journal file: D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source emif_test.tcl -notrace
