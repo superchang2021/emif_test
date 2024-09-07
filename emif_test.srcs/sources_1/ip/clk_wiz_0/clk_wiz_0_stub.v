@@ -1,9 +1,9 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sat Aug 10 16:08:12 2024
+// Date        : Tue Aug 20 10:43:34 2024
 // Host        : DZ-ChangRenwei running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {d:/Chang/files/code/verilog/universal interface
+// Command     : write_verilog -force -mode synth_stub {D:/Chang/files/code/verilog/universal interface
 //               board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v}
 // Design      : clk_wiz_0
 // Purpose     : Stub declaration of top-level module interface

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Aug 13 15:42:07 2024
-# Process ID: 16696
+# Start of session at: Sat Sep  7 09:43:31 2024
+# Process ID: 7092
 # Current directory: D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1
 # Command line: vivado.exe -log emif_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source emif_test.tcl
 # Log file: D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/emif_test.vds
@@ -16,28 +16,46 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50fgga484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18712 
+INFO: Helper process launched with PID 13184 
+WARNING: [Synth 8-992] we_down_cnt is already implicitly declared earlier [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:258]
+WARNING: [Synth 8-992] we_logic is already implicitly declared earlier [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:259]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 968.320 ; gain = 234.633
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 994.043 ; gain = 241.688
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'emif_test' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:17]
-	Parameter W_LTNCY bound to: 8'b00000010 
-	Parameter R_LTNCY bound to: 8'b00000010 
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-16696-DZ-ChangRenwei/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-16696-DZ-ChangRenwei/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-7092-DZ-ChangRenwei/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-7092-DZ-ChangRenwei/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'sync_emif_clk' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/sync_emif_clk.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'sync_emif_clk' (2#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/sync_emif_clk.v:17]
 INFO: [Synth 8-6157] synthesizing module 'emif_control' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_control.v:17]
-	Parameter W_LTNCY bound to: 8'b00000010 
-	Parameter R_LTNCY bound to: 8'b00000010 
+WARNING: [Synth 8-6014] Unused sequential element emif_clk_in1_reg was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_control.v:52]
+WARNING: [Synth 8-6014] Unused sequential element emif_clk_in2_reg was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_control.v:52]
+WARNING: [Synth 8-6014] Unused sequential element cnt_clk_pose_reg was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_control.v:79]
 INFO: [Synth 8-6155] done synthesizing module 'emif_control' (3#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_control.v:17]
 INFO: [Synth 8-6157] synthesizing module 'emif_read' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_read.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'emif_read' (4#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_read.v:17]
 INFO: [Synth 8-6157] synthesizing module 'emif_write' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_write.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'emif_write' (5#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_write.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'emif_test' (6#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:17]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:185]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-7092-DZ-ChangRenwei/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (6#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/.Xil/Vivado-7092-DZ-ChangRenwei/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1_inst'. This will prevent further optimization [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:185]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U1_sync'. This will prevent further optimization [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:82]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U2_control'. This will prevent further optimization [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:99]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U3_emif_read'. This will prevent further optimization [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:124]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U4_emif_write'. This will prevent further optimization [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:139]
+WARNING: [Synth 8-6014] Unused sequential element mcu_data_reg[7] was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:156]
+WARNING: [Synth 8-6014] Unused sequential element mcu_data_reg[5] was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:156]
+WARNING: [Synth 8-6014] Unused sequential element mcu_data_reg[3] was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:156]
+WARNING: [Synth 8-6014] Unused sequential element mcu_data_reg[1] was removed.  [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'emif_test' (7#1) [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/new/emif_test.v:17]
+WARNING: [Synth 8-3331] design emif_control has unconnected port signal_en
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_clk
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_dqm0
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_dqm1
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_cke
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1042.469 ; gain = 308.781
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.637 ; gain = 289.281
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -50,51 +68,52 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1042.469 ; gain = 308.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.637 ; gain = 289.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1042.469 ; gain = 308.781
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.637 ; gain = 289.281
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1042.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1041.637 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'U10_pll'
 Finished Parsing XDC File [d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'U10_pll'
+Parsing XDC File [d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila_1_inst'
+Finished Parsing XDC File [d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila_1_inst'
 Parsing XDC File [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/constrs_1/new/emif_test.xdc]
-WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/constrs_1/new/emif_test.xdc:9]
 Finished Parsing XDC File [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/constrs_1/new/emif_test.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/constrs_1/new/emif_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/emif_test_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/emif_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1138.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1162.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1138.074 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1162.480 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila_1_inst' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50fgga484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  {d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  {d:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 7).
 Applied set_property DONT_TOUCH = true for U10_pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_1_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -108,17 +127,28 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                1 Bit    Registers := 7     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   4 Input     32 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 12    
 	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -128,42 +158,61 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module emif_test 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module sync_emif_clk 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 Module emif_control 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	               13 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
 Module emif_read 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module emif_write 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -180,29 +229,45 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[6]' (FDCE) to 'U4_emif_write/cnt_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[7]' (FDCE) to 'U4_emif_write/cnt_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[5]' (FDCE) to 'U4_emif_write/cnt_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[4]' (FDCE) to 'U4_emif_write/cnt_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[3]' (FDCE) to 'U4_emif_write/cnt_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[2]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[3]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[3]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[4]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[4]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[5]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[5]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[6]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[6]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[7]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[7]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[8]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[8]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[9]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[9]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[10]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[10]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[11]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[11]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[12]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[12]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[13]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[13]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[14]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/fpga_write_in_reg[14]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[2]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[1]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[1]'
-INFO: [Synth 8-3886] merging instance 'U4_emif_write/cnt_en_reg[0]' (FDCE) to 'U4_emif_write/fpga_write_in_reg[0]'
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design emif_control has unconnected port signal_en
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_clk
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_dqm0
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_dqm1
+WARNING: [Synth 8-3331] design emif_control has unconnected port emif_cke
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_70' (FDP) to 'emif_data_out_regi_68'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[0]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_68' (FDP) to 'emif_data_out_regi_66'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[1]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_66' (FDP) to 'emif_data_out_regi_64'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[2]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_64' (FDP) to 'emif_data_out_regi_62'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[3]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_62' (FDP) to 'emif_data_out_regi_60'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[4]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_60' (FDP) to 'emif_data_out_regi_58'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[5]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_58' (FDP) to 'emif_data_out_regi_56'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[6]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_56' (FDP) to 'emif_data_out_regi_54'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[7]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_54' (FDP) to 'emif_data_out_regi_52'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[8]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_52' (FDP) to 'emif_data_out_regi_50'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[9]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_50' (FDP) to 'emif_data_out_regi_48'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[10]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_48' (FDP) to 'emif_data_out_regi_46'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[11]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_46' (FDP) to 'emif_data_out_regi_44'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[12]' (FDP) to 'emif_data_out_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_44' (FDP) to 'emif_data_out_regi_42'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_tristate_oe_reg[13]' (FDC) to 'emif_data_out_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'emif_data_out_regi_42' (FDP) to 'emif_data_out_regi_40'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\emif_data_out_tristate_oe_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\emif_data_out_tristate_oe_reg[15] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -213,15 +278,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-565] redefining clock 'sys_clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1138.074 ; gain = 404.387
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1139.414 ; gain = 405.727
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,7 +297,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1140.434 ; gain = 406.746
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -257,13 +321,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,25 +346,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -311,6 +375,7 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |clk_wiz_0     |         1|
+|2     |ila_1         |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -318,49 +383,54 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
-|2     |CARRY4    |     8|
-|3     |LUT1      |     1|
-|4     |LUT2      |     1|
-|5     |LUT4      |    36|
-|6     |LUT5      |     4|
-|7     |LUT6      |     3|
-|8     |FDCE      |    40|
-|9     |IBUF      |     5|
-|10    |OBUFT     |    16|
+|2     |ila_1     |     1|
+|3     |BUFG      |     1|
+|4     |CARRY4    |     8|
+|5     |LUT1      |     4|
+|6     |LUT2      |     4|
+|7     |LUT3      |     4|
+|8     |LUT4      |    11|
+|9     |LUT5      |    86|
+|10    |LUT6      |    52|
+|11    |FDCE      |   132|
+|12    |FDPE      |     3|
+|13    |IBUF      |    13|
+|14    |IOBUF     |    16|
+|15    |OBUF      |     4|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+----------------+--------------+------+
-|      |Instance        |Module        |Cells |
-+------+----------------+--------------+------+
-|1     |top             |              |   119|
-|2     |  U1_sync       |sync_emif_clk |     2|
-|3     |  U2_control    |emif_control  |    86|
-|4     |  U4_emif_write |emif_write    |     5|
-+------+----------------+--------------+------+
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |   343|
+|2     |  U2_control   |emif_control |     9|
+|3     |  U3_emif_read |emif_read    |    43|
++------+---------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1147.219 ; gain = 317.926
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1147.219 ; gain = 413.531
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1165.469 ; gain = 289.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1165.469 ; gain = 413.113
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1158.230 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1174.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.496 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+63 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1163.168 ; gain = 689.914
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.168 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1174.496 ; gain = 692.125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.496 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.runs/synth_1/emif_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file emif_test_utilization_synth.rpt -pb emif_test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 15:42:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  7 09:44:09 2024...

@@ -9,6 +9,7 @@ vmap xil_defaultlib riviera/xil_defaultlib
 
 vlog -work xpm  -sv2k12 "+incdir+../../../ipstatic" \
 "D:/Chang/software/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Chang/software/Vitis/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
 "D:/Chang/software/Vitis/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \

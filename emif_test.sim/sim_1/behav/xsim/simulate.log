@@ -1,0 +1,4 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance vtf_emif_test.uut.U10_pll.inst.plle2_adv_inst are not same.
+$stop called at time : 390100 ns : File "D:/Chang/files/code/verilog/universal interface board/communication test/EMIF/emif_test/emif_test.srcs/sim_1/new/vtf_emif_test.v" Line 56

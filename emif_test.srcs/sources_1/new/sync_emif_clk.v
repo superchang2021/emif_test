@@ -18,26 +18,44 @@ module sync_emif_clk(
   input clk,
   input rst_n,
   input clk_in,
-    output clk_out
+  input ce_in,
+  input we_in,
+    output clk_out,
+    output ce_out,
+    output we_out
 );
 /**********  reg define  ***********/
 reg clk_in1;    //寄存clk_in
 reg clk_in2;    //寄存clk_in
+reg ce_in1;
+reg ce_in2;
+reg we_in1;
+reg we_in2;
 
 /**********  assign define  ***********/
 assign clk_out = clk_in2;    //将打拍后的时钟输出
+assign ce_out = ce_in2;
+assign we_out = we_in2;
 
 //**************************************
 //            时钟信号打拍
 //**************************************
 always @(posedge clk or negedge rst_n)begin
   if(~rst_n)begin
-    clk_in1 <= 1'b0;
-    clk_in2 <= 1'b0;
+    clk_in1 <= 1'b1;
+    clk_in2 <= 1'b1;
+    ce_in1 <= 1'b1;
+    ce_in2 <= 1'b1;
+    we_in1 <= 1'b1;
+    we_in2 <= 1'b1;
   end
   else begin
     clk_in1 <= clk_in;
     clk_in2 <= clk_in1;
+    ce_in1 <= ce_in;
+    ce_in2 <= ce_in1;
+    we_in1 <= we_in;
+    we_in2 <= we_in1;
   end
 end
 

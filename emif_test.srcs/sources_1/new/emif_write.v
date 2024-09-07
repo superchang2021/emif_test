@@ -37,11 +37,15 @@ always @(posedge clk or negedge rst_n) begin
   end
 // 只在第一个CLK写入数据
   else if(write_en && (cnt_en == 1'b0)) begin
-    fpga_write_in <= cnt_en + 1'b1;
+    fpga_write_in <= 16'b0101010101010101;
     cnt_en <= cnt_en + 1'b1;
   end
 // 只在第二个CLK写入数据
   else if(write_en && (cnt_en == 1'b1)) begin
+    fpga_write_in <= 16'b0101010101010101;
+    cnt_en <= cnt_en + 1'b1;
+  end
+  else if(write_en && (cnt_en <= 32'd7)) begin
     fpga_write_in <= cnt_en + 1'b1;
     cnt_en <= cnt_en + 1'b1;
   end

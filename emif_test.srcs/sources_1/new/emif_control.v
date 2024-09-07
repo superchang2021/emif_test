@@ -14,12 +14,7 @@
 // Revision 0.01 - File Created
 // Additional Comments:当CE和WE/RE为低电平时，开启EMIF_CLK计数器，计数W_LTNCY/W_LTNCY后拉给出读/写使能，当CE和WE/RE为出现高电平时，去使能
 //////////////////////////////////////////////////////////////////////////////////
-module emif_control
-#(
-parameter W_LTNCY = 8'd2,    //写延时周期
-parameter R_LTNCY = 8'd2     //读延时周期
-)
-(
+module emif_control(
 // sys input
   input clk,
   input rst_n,
@@ -28,7 +23,15 @@ parameter R_LTNCY = 8'd2     //读延时周期
   input wr_en,           //MCU写使能
   input rd_en,           //MCU读使能
   input emif_clk,        //MCU同步时钟
+  input emif_cas,
+  input emif_ras,
+  input emif_dqm0,
+  input emif_dqm1,
+  input emif_cke,
+  input [2:0] emif_addr,//MCU地址线
 // output
+    output [12:0] row_addr_out,
+    output [12:0] col_addr_out,
     output data_wren,    //FPGA的读使能
     output data_rden     //FPGA的写使能
 );
@@ -39,6 +42,9 @@ reg emif_clk_in1;
 reg emif_clk_in2;
 reg [31:0] cnt_clk_pose;    //EMIF同步时钟上升沿计数
 
+reg [12:0] row_addr;
+reg [12:0] col_addr;
+
 /**********  wire define  ***********/
 wire emif_clk_pose;    //寄存emif_clk的上升沿
 
@@ -46,6 +52,9 @@ wire emif_clk_pose;    //寄存emif_clk的上升沿
 assign emif_clk_pose = emif_clk_in1 & (~emif_clk_in2);    //捕获EMIF时钟上升沿
 assign data_wren = data_wren_in;
 assign data_rden = data_rden_in;
+
+assign row_addr_out = row_addr;
+assign col_addr_out = col_addr;
 
 //**************************************
 //         emif_clk 上升沿捕获
@@ -103,19 +112,40 @@ always @(posedge clk or negedge rst_n) begin
     data_rden_in <= 1'b0;
   end
 // 写使能
-  else if( (cnt_clk_pose >= W_LTNCY) && (~wr_en)) begin
+  else if({wr_en,emif_cas}==2'b00) begin
     data_wren_in <= 1'b1;
+    data_rden_in <= 1'b0;
   end
 // 读使能
-  else if( (cnt_clk_pose >= R_LTNCY) && (~rd_en)) begin
+  else if({rd_en,emif_cas}==2'b00) begin
     data_rden_in <= 1'b1;
+    data_wren_in <= 1'b0;
   end
 //  清零
   else begin
     data_wren_in <= 1'b0;
     data_rden_in <= 1'b0;
   end
-
 end
+//**************************************
+//         地址位获取
+//**************************************
+always @(posedge clk or negedge rst_n) begin
+  if(~rst_n) begin
+    row_addr <= 13'd0;
+    col_addr <= 13'd0;
+  end
+  else if(~emif_ras) begin
+    row_addr[2:0] <= emif_addr;
+  end
+  else if(~emif_cas) begin
+    col_addr[2:0] <= emif_addr;
+  end
+  else begin
+    row_addr <= row_addr;
+    col_addr <= col_addr;
+  end
+end
+
 
 endmodule
